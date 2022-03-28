@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          25+5 <code>Pomodoro Clock</code> On progress !
         </p>
         <a
           className="App-link"
