@@ -1,14 +1,12 @@
 body {
-  background: #1e555c;
+  background-image: url("bg.jpg");
+  background-color: darkgreen;
   color: white;
   font-size: 30px;
-  text-align: center;
 }
 body #container {
   display: flex;
   height: 100vh;
-  justify-content: center;
-  align-items: center;
 }
 body #container .main-title {
   font-size: 50px;
@@ -77,6 +75,36 @@ body #container .timer .timer-control button:active {
   text-decoration: none;
   color: #00264d;
   line-height: 26px;
+}
+
+#break-length {
+  color: aqua;
+  background-color: #00264d;
+  padding: 5px;
+  width: 25%;
+  height: 25%;
+}
+
+#session-length {
+  color: aqua;
+  background-color: #00264d;
+  padding: 5px;
+  width: 25%;
+  height: 25%;
+}
+
+button {
+  color: navy;
+  background-color: white;
+  border-radius: 25px;
+  border: none;
+  padding: 30px;
+  font-size: small;
+  width: 25%;
+}
+
+.btn-level {
+  display: flex;
 }
 
 /*# sourceMappingURL=index.css.map */

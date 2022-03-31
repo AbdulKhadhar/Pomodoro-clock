@@ -1,13 +1,14 @@
 body {
-    background: #1e555c;
+    background-image: url("bg.jpg");
+    background-color: darkgreen;
     color: white;
     font-size: 30px;
-    text-align: center;
+    //text-align: center;
     #container {
       display: flex;
       height: 100vh;
-      justify-content: center;
-      align-items: center;
+      //justify-content: center;
+      //align-items: center;
       .main-title {
         font-size: 50px;
         margin-bottom: 20px;
@@ -79,3 +80,32 @@ body {
     }
   }
   
+  #break-length {
+    
+    color: aqua;
+    background-color: #00264d;
+    padding: 5px;
+    width: 25%;
+    height: 25%;
+  }
+  #session-length {
+    
+    color: aqua;
+    background-color: #00264d;
+    padding: 5px;
+    width: 25%;
+    height: 25%;
+  }
+  button {
+    color: navy;
+    background-color: white;
+    border-radius: 25px;
+    border: none;
+    padding: 30px;
+    font-size: small;
+    width: 25%;
+  }
+
+  .btn-level {
+    display: flex;
+  }

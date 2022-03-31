@@ -2,9 +2,11 @@ import React from "react";
 import "./TimerLengthControl.css";
 import TimerLengthControl from "./TimerLengthControl";
 
+
 const accurateInterval = function (fn, time) {
   var cancel, nextAt, timeout, wrapper;
   nextAt = new Date().getTime() + time;
+  //getTime() method returns the number of milliseconds since the ECMAScript epoch
   timeout = null;
   wrapper = function () {
     nextAt += time;
@@ -81,7 +83,7 @@ class Timer extends React.Component {
         timer: currentLength * 60 + 60
       });
     }
-  }
+  } 
   timerControl() {
     if (this.state.timerState === 'stopped') {
       this.beginCountDown();
@@ -202,10 +204,10 @@ class Timer extends React.Component {
         </div>
         <div className="author">
           {' '}
-          Designed and Coded by <br />
-          <a href="https://goo.gl/6NNLMG" target="_blank">
-            Peter Weinberg
-          </a>
+          Designed by <br />
+          
+            Abu
+          
         </div>
         <audio
           id="beep"
