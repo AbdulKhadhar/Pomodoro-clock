@@ -1,110 +1,64 @@
-body {
-  background-image: url("bg.jpg");
-  background-color: darkgreen;
-  color: white;
-  font-size: 30px;
-}
-body #container {
-  display: flex;
-  height: 100vh;
-}
-body #container .main-title {
-  font-size: 50px;
-  margin-bottom: 20px;
-}
-body #container .length-control {
-  width: 250px;
-}
-body #container button {
-  background: none;
-  outline: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-}
-body #container .btn-level,
-body #container .length-control {
-  display: inline-block;
-}
-body #container .btn-level .btn-level:nth-child(3),
-body #container .length-control .btn-level:nth-child(3) {
-  width: 40px;
-}
-body #container .timer {
-  border: 7px solid #13353a;
-  margin: 20px auto 10px auto;
-  width: 270px;
-  height: 160px;
-  border-radius: 50px;
-  position: relative;
-}
-body #container .timer .timer-wrapper {
-  position: absolute;
-  width: 190px;
-  height: 110px;
-  left: 50%;
-  top: 50%;
-  margin-left: -95px;
-  margin-top: -57px;
-}
-body #container .timer #time-left {
-  font-family: digital;
-  font-size: 80px;
-}
-body #container .timer .timer-control button:active {
-  color: #13353a;
-}
-
-@media screen and (max-width: 500px) {
-  #container {
-    transform: scale(0.8);
-    -webkit-transform: scale(0.8);
-    -moz-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    -o-transform: scale(0.8);
-  }
-}
-.author {
-  text-align: center;
-  font-family: Share Tech Mono, sans;
-  margin-top: 15px;
-  font-size: 14px;
-  color: #a50d0d;
-}
-.author a {
-  text-decoration: none;
-  color: #00264d;
-  line-height: 26px;
+.App{
+  background-image: linear-gradient(369deg,#271605,#082746);
+  
 }
 
 #break-length {
+    
   color: aqua;
-  background-color: #00264d;
-  padding: 5px;
-  width: 25%;
-  height: 25%;
-}
-
-#session-length {
-  color: aqua;
-  background-color: #00264d;
-  padding: 5px;
-  width: 25%;
-  height: 25%;
-}
-
-button {
-  color: navy;
-  background-color: white;
-  border-radius: 25px;
-  border: none;
+  background-color: #0d2741;
   padding: 30px;
-  font-size: small;
-  width: 25%;
+  width : 150px;
+  grid-area: b;
 }
+#session-length {
+  
+  color: aqua;
+  background-color: #0d2741;
+  padding: 30px;
+  width : 150px;
+  grid-area: c;
+  
+}
+button {
+width: 150px;
+appearance: button;
+background-color: transparent;
+background-image: linear-gradient(to bottom, #fff, #f8eedb);
+border: 0 solid #e5e7eb;
+border-radius: .5rem;
+box-sizing: border-box;
+color: #482307;
+column-gap: 1rem;
+cursor: pointer;
+display: flex;
+font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+font-size: 100%;
+font-weight: 700;
+line-height: 24px;
+margin: 0;
+outline: 2px solid transparent;
+padding: 1rem 1.5rem;
+text-align: center;
+text-transform: none;
+transition: all .1s cubic-bezier(.4, 0, .2, 1);
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+box-shadow: -6px 8px 10px rgba(81,41,10,0.1),0px 2px 2px rgba(81,41,10,0.2);
+}
+
+button:active {
+background-color: #f3f4f6;
+box-shadow: -1px 2px 5px rgba(81,41,10,0.15),0px 1px 1px rgba(81,41,10,0.15);
+transform: translateY(0.125rem);
+}
+
+button:focus {
+box-shadow: rgba(72, 35, 7, .46) 0 0 0 4px, -6px 8px 10px rgba(81,41,10,0.1), 0px 2px 2px rgba(81,41,10,0.2);
+}
+
 
 .btn-level {
   display: flex;
 }
-
-/*# sourceMappingURL=index.css.map */

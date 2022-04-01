@@ -1,4 +1,3 @@
-import './App.css';
 import TimerLengthControl from "./Components/TimerLengthControl"
 import Timer from "./Components/Timer"
 
