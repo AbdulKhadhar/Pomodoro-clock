@@ -5,7 +5,7 @@ class TimerLengthControl extends React.Component {
     return (
       <div className="length-control">
         
-        <div id={this.props.titleID}>{this.props.title}</div>
+        <div id={this.props.titleID}>{this.props.title}
         <button
           className="btn-level"
           id={this.props.minID}
@@ -14,7 +14,7 @@ class TimerLengthControl extends React.Component {
         >
           <i className="fa fa-arrow-down fa-2x" />
         </button> 
-        
+      
         <div className="btn-level" id={this.props.lengthID}>
           {this.props.length}
         </div>
@@ -26,6 +26,7 @@ class TimerLengthControl extends React.Component {
         >
           <i className="fa fa-arrow-up fa-2x" />
         </button>
+        </div>
       </div>
     );
   }

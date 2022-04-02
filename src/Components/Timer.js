@@ -83,7 +83,7 @@ class Timer extends React.Component {
         timer: currentLength * 60 + 60
       });
     }
-  } 
+  }
   timerControl() {
     if (this.state.timerState === 'stopped') {
       this.beginCountDown();
@@ -167,8 +167,9 @@ class Timer extends React.Component {
   }
   render() {
     return (
-      <div>
+      <>
         <div className="main-title">25 + 5 Clock</div>
+        
         <TimerLengthControl
           addID="break-increment"
           length={this.state.brkLength}
@@ -194,32 +195,36 @@ class Timer extends React.Component {
           </div>
         </div>
         <div className="timer-control">
-          <button id="start_stop" onClick={this.timerControl}>
-            <i className="fa fa-play fa-2x" />
-            <i className="fa fa-pause fa-2x" />
-          </button>
-          <button id="reset" onClick={this.reset}>
-            <i className="fa fa-refresh fa-2x" />
-          </button>
-        </div>
-        <div className="author">
-          {' '}
-          Designed by <br />
-          
+          <div className="play">
+            <button id="start_stop" onClick={this.timerControl}>
+              <i className="fa fa-play fa-2x" />
+              <i className="fa fa-pause fa-2x" />
+            </button>
+          </div>
+          <div className="reset">
+            <button id="reset" onClick={this.reset}>
+              <i className="fa fa-refresh fa-2x" />
+            </button>
+          </div>
+          <div className="author">
+            {' '}
+            Designed by <br />
+
             Abu
-          
+
+          </div>
+          <audio
+            id="beep"
+            preload="auto"
+            ref={(audio) => {
+              this.audioBeep = audio;
+            }}
+            src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/audio/BeepSound.wav"
+          />
         </div>
-        <audio
-          id="beep"
-          preload="auto"
-          ref={(audio) => {
-            this.audioBeep = audio;
-          }}
-          src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/audio/BeepSound.wav"
-        />
-      </div>
-    );
+      </>  
+        );
   }
 }
 
-export default Timer;
+        export default Timer;
